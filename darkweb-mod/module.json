@@ -10,9 +10,47 @@
   },
   "tools": [
     {
-      "name": "Executar Busca DW",
-      "script": "tools/searcher.py",
-      "description": "Busca por termos em AHMIA, Haystack, etc."
+      "name": "Buscador - Dark Web",
+      "script": "tools/buscador.py",
+      "description": "Busca por termos em AHMIA, Haystack e outros.",
+      "parameters": [
+        {
+          "key": "query",
+          "label": "Termo de Busca:",
+          "type": "string",
+          "required": true,
+          "placeholder": "Digite a busca...",
+          "default": "",
+          "description": "Palavra(s)-chave para buscar na Dark Web."
+        },
+        {
+          "key": "limit",
+          "label": "Limite de Resultados:",
+          "type": "integer",
+          "required": false,
+          "default": 250,
+          "min": 1,
+          "max": 999999,
+          "description": "Número máximo de resultados a serem retornados (opcional)."
+        },
+        {
+          "key": "engines",
+          "label": "Motores (separados por vírgula):",
+          "type": "string",
+          "required": false,
+          "placeholder": "ahmia,haystack",
+          "default": "ahmia,haystack",
+          "description": "Lista de motores de busca .onion a serem usados (ex: ahmia,haystack,torch)."
+        },
+        {
+          "key": "debug",
+          "label": "Ativar modo Debug",
+          "type": "boolean",
+          "required": false,
+          "default": false,
+          "description": "Executa a ferramenta em modo de depuração com mais logs."
+        }
+      ]
     }
   ]
 }
