@@ -1,6 +1,6 @@
 {
-  "name": "Buscador Dark Web",
-  "version": "1.0.2",
+  "name": "Módulo - Dark Web",
+  "version": "1.0.3",
   "category": "Dark Web",
   "description": "Realiza buscas em motores .onion usando Tor.",
   "author": "Wolf Security",
