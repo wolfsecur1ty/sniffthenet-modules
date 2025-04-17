@@ -5,8 +5,8 @@
   "description": "Realiza buscas em motores .onion usando Tor.",
   "author": "Wolf Security",
   "dependencies": {
-    "system": ["tor"],
-    "python": ["requests", "beautifulsoup4", "stem"]
+    "system": ["tor", "firefox-esr"],
+    "python": ["requests", "beautifulsoup4", "stem", "tqdm", "selenium"]
   },
   "tools": [
     {
