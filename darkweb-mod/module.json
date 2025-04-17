@@ -1,6 +1,6 @@
 {
   "name": "Módulo - Dark Web",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "category": "Dark Web",
   "description": "Realiza buscas em motores .onion usando Tor.",
   "author": "Wolf Security",
