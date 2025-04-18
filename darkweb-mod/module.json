@@ -1,11 +1,11 @@
 {
   "name": "Módulo - Dark Web",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "category": "Dark Web",
   "description": "Realiza buscas em motores .onion usando Tor.",
   "author": "Wolf Security",
   "dependencies": {
-    "system": ["tor", "firefox-esr"],
+    "system": ["tor", "firefox"],
     "python": ["requests", "beautifulsoup4", "stem", "tqdm", "selenium"]
   },
   "tools": [
