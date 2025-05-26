@@ -192,7 +192,7 @@ def search_engine(engine_name, query, limit=None, debug=False):
         print(f"[ERRO] {engine_name}: {e}")
 
     if debug:
-        print(f"[INFO] Total de resultados coletados para {engine_name}: {len(results)}")
+        print(f"[DEBUG] Final de execução - Total de resultados coletados para {engine_name}: {len(results)}")
     return results
 
 def save_to_csv(results, output_file):
@@ -209,7 +209,7 @@ def open_in_default_application(file_path):
     if os.name == "nt":  # Windows
         os.startfile(file_path)
     elif os.name == "posix":  # Linux/macOS
-        subprocess.run(["xdg-open", file_path])
+        subprocess.Popen(["xdg-open", file_path], start_new_session=True)
     else:
         print(f"[INFO] Abra manualmente o arquivo: {file_path}")
 
@@ -253,4 +253,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 

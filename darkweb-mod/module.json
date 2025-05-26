@@ -50,7 +50,13 @@
           "default": false,
           "description": "Executa a ferramenta em modo de depuração com mais logs."
         }
-      ]
+      ],
+      "output_handling": {
+        "type": "file",
+        "argument_name": "--output",
+        "default_subdir": "Pesquisas/DarkWeb",
+        "filename_pattern": "dw_busca_{query}_{timestamp}.csv"
+      }
     }
   ]
 }
